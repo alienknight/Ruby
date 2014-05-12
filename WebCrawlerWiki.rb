@@ -2,7 +2,7 @@ require 'nokogiri'
 require 'open-uri'
 require 'mysql2'
 
-db = Mysql2::Client.new(:host=>"localhost",:username=>"root",:password=>"woshishei",:database=>"actress_list");
+db = Mysql2::Client.new(:host=>"localhost",:username=>"root",:password=>"****",:database=>"actress_list");
 db.query("drop table if exists list")
 db.query("create table list(actress varchar(30),twitter_url varchar(60))")
 # define the html url
